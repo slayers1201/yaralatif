@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Universe 💫</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@1,300&family=Cinzel:wght@300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<div id="loader">
+  <div class="lr"><div class="rr"></div><div class="rr r2"></div><div class="rr r3"></div></div>
+  <p class="lt">Entering Your Universe<span class="dot">...</span></p>
+</div>
+
+<div id="landing">
+  <canvas id="bg-canvas"></canvas>
+  <div class="lc">
+    <p class="ls">a universe made just for you</p>
+    <h1 class="ll">You Are My<br/><em>Whole Universe</em></h1>
+    <p class="lh">❤️</p>
+    <button id="enter-btn">Enter Our Galaxy ✨</button>
+  </div>
+  <button id="mute-btn" class="mb">♩</button>
+</div>
+
+<div id="galaxy-scene" class="hidden">
+  <canvas id="gc"></canvas>
+  <div id="hint">drag to orbit · pinch zoom · tap stars</div>
+  <button id="back-btn">← Back</button>
+  <button id="mute-btn2" class="mb mf">♩</button>
+
+  <div id="lb" class="hidden">
+    <div id="lbi">
+      <img id="lbimg" src="" alt=""/>
+      <p id="lbcap"></p>
+      <button id="lbx">✕ close</button>
+    </div>
+  </div>
+</div>
+
+<audio id="bgm" loop>
+    <source src="music/ambient.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
